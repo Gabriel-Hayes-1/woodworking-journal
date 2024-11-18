@@ -2,9 +2,23 @@
 <html>
   <head>
     <title>Woodworking Journal</title>
-    <link rel = "stylesheet" href = "main/style.css">
+    <link rel = "stylesheet" href = "style.css">
   </head>
+
   <body>
-  <script src = "main/main.js"> </script>
+
+    <nav id = "header">
+      <button id="selected-site" onclick="home()"> Home </button>
+      <button onclick = "billOfMats()"> Bill of Materials </button>
+      <button > Equipment Used </button>
+      <button> Calendar </button>
+    </nav>
+    <iframe id="bill-of-materials" src="bill-of-materials.html"></iframe>
+
+    <div id="container"></div>
+
+
+    <script src = "main.js"> </script>
+  
   </body>
 </html>

@@ -1,1 +1,38 @@
+#header {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+    height: 3em;
+    width: 95%;
+  
+    
+  }
+  #header #selected-site {
+    border-bottom: 3px solid #3050f0;
+    color: #3050f0;
+  }
+  
+  
+  
+  #header a, #header button { /* formats individual buttons */
+    opacity: 1;
+    color: #303030;
+    text-decoration: none;
+    padding: 10px 2%; 
+    font-family: sans-serif;
+    border-radius: 3px;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: inline-block; 
+    border-width: 0px;
+    background-color: #ffffff;
+  }
+  
+  #header button:hover {
+    background-color: #d2d2d2;
+    cursor: pointer;
+  }
 
+  #test {
+    color: red;
+  }
