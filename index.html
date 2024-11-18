@@ -5,17 +5,18 @@
     <link rel = "stylesheet" href = "style.css">
   </head>
 
-  <body>
+  <body onload="extractContent('home')">
 
     <nav id = "header">
-      <button id="selected-site" onclick="home()"> Home </button>
-      <button onclick = "extractContent('bill-of-materials')"> Bill of Materials </button>
-      <button onclick = "extractContent('equipment')"> Equipment Used </button>
-      <button onclick = "extractContent('calendar')"> Calendar </button>
+      <button  id = "0" class="selected-site" onclick="extractContent('home')"> Home </button>
+      <button id = "1" onclick = "extractContent('bill-of-materials')"> Bill of Materials </button>
+      <button id = "2" onclick = "extractContent('equipment')"> Equipment Used </button>
+      <button id = "3" onclick = "extractContent('calendar')"> Calendar </button>
     </nav>
     <iframe id="bill-of-materials" src="bill-of-materials.html"></iframe>
     <iframe id="calendar" src="Calendar.html"></iframe>
     <iframe id="equipment" src="equipment-used.html"></iframe>
+    <iframe id="home" src="home.html"></iframe>
     <br>
     <div id="container">
     </div>
