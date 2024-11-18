@@ -12,7 +12,9 @@
     color: #3050f0;
   }
   
-  
+  iframe {
+    display: none;
+  }
   
   #header a, #header button { /* formats individual buttons */
     opacity: 1;
@@ -33,6 +35,10 @@
     cursor: pointer;
   }
 
+
+
+
+  
   #test {
     color: red;
   }

@@ -9,13 +9,16 @@
 
     <nav id = "header">
       <button id="selected-site" onclick="home()"> Home </button>
-      <button onclick = "billOfMats()"> Bill of Materials </button>
-      <button > Equipment Used </button>
-      <button> Calendar </button>
+      <button onclick = "extractContent('bill-of-materials')"> Bill of Materials </button>
+      <button onclick = "extractContent('equipment')"> Equipment Used </button>
+      <button onclick = "extractContent('calendar')"> Calendar </button>
     </nav>
     <iframe id="bill-of-materials" src="bill-of-materials.html"></iframe>
-
-    <div id="container"></div>
+    <iframe id="calendar" src="Calendar.html"></iframe>
+    <iframe id="equipment" src="equipment-used.html"></iframe>
+    <br>
+    <div id="container">
+    </div>
 
 
     <script src = "main.js"> </script>
