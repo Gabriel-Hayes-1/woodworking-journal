@@ -13,7 +13,7 @@
   }
   
   iframe {
-    display: none;
+    display: block;
   }
   
   #header a, #header button { /* formats individual buttons */
@@ -47,6 +47,10 @@
   }
   #calendar-page #nov-13{
     display: flex;
+  }
+  #calendar-page #text-container{
+    display: flex;
+    flex-direction: column;
   }
   #calendar-page h1 {
     font-family: Helvetica, sans-serif;

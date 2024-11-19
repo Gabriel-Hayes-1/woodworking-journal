@@ -13,10 +13,33 @@
       <button id = "2" onclick = "extractContent('equipment')"> Equipment Used </button>
       <button id = "3" onclick = "extractContent('calendar')"> Calendar </button>
     </nav>
-    <iframe id="bill-of-materials" src="bill-of-materials.html"></iframe>
-    <iframe id="calendar" src="calendar.html"></iframe>
-    <iframe id="equipment" src="equipment.html"></iframe>
-    <iframe id="home" src="home.html"></iframe>
+    
+    <template id="home">
+          <p>Welcome to the home page!</p>
+    </template>
+
+    <template id="bill-of-materials">
+      <p>Bill of materials</p>
+    </template>
+    <template id="equipment">
+      <p>Equipment Used!
+      </p>
+    </template>
+    <template id="calendar">
+      <div id="calendar-page">
+        <div id="nov-13">
+            <img src="IMG_1423.jpeg" alt="wood with gabriel on it" width="500px">
+            <div id="text-container">
+              <h1>Wednesday, November 13</h1>
+              <p>Today we used the miter saw.</p>
+            </div>
+            
+        </div>  
+    </div>
+    </template>
+    
+
+
     <br>
     <div id="container">
     </div>
