@@ -21,7 +21,6 @@ function extractContent(id) {
     
 }
 
-document.onload
 
 
 
