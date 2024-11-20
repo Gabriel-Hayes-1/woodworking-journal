@@ -21,6 +21,33 @@ function extractContent(id) {
     
 }
 
+function DistanceFromTop(element) {
+    let distance = 0;
+    while (element) {
+        distance += element.offsetTop;
+        element = element.offsetParent;
+    }
+    return distance;
+}
+
+
+
+addEventListener("scroll", (event) => {});
+
+onscroll = (event) => {
+    let images = document.querySelectorAll("img")
+    let imageArray = Array.from(images)
+    
+    imageArray.forEach((img) => {
+            if (DistanceFromTop(img) > 600) { //if distance is greater than 600   
+                   let pos = window.scrollY-DistanceFromTop(img)
+                   if (pos < 0) {
+                        img.style.left = `${pos}px`
+                   }   
+            }
+      });
+};
+
 
 
 
