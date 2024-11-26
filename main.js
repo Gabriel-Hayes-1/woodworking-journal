@@ -5,6 +5,7 @@ const possibleIds = [
     "calendar"
 ];
 const container = document.getElementById("container")
+const debug = document.getElementById("debug")
 
 function extractContent(id) {
         let template = document.getElementById(id)
@@ -18,35 +19,34 @@ function extractContent(id) {
             elements[i].classList.remove("selected-site");
         }
         document.getElementById(possibleIds.indexOf(id)).classList.add("selected-site");
-    
 }
 
 function DistanceFromTop(element) {
-    let distance = 0;
-    while (element) {
-        distance += element.offsetTop;
-        element = element.offsetParent;
-    }
-    return distance;
+    return element.getBoundingClientRect().top + window.scrollY;
 }
 
 
 
-addEventListener("scroll", (event) => {});
+window.addEventListener("scroll", scroll)
 
-onscroll = (event) => {
-    let images = document.querySelectorAll("img")
-    let imageArray = Array.from(images)
-    
-    imageArray.forEach((img) => {
-            if (DistanceFromTop(img) > 600) { //if distance is greater than 600   
-                   let pos = window.scrollY-DistanceFromTop(img)
-                   if (pos < 0) {
-                        img.style.left = `${pos}px`
-                   }   
+
+
+function scroll() {
+    const images = Array.from(document.querySelectorAll("img"));
+    images.forEach((img) => {
+        const startOffset = DistanceFromTop(img); 
+        const scrollPosition = window.scrollY;
+    if (startOffset > 600) {
+        if (scrollPosition > startOffset-(800)) { //when the image starts coming in (px above image bottom)
+            const pos = ((scrollPosition - (startOffset-(img.height/2))) * 1.8); 
+            if (pos < 0) {
+                img.style.left = `${pos}px`; 
             }
-      });
-};
+            
+        }
+    }
+    });
+}
 
 
 

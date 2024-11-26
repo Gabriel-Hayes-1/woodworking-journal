@@ -1,6 +1,5 @@
 body {
-  margin-top: 0px;
-  height: 200vh;
+  margin: 0px;
 }
 #header {
 
@@ -10,6 +9,7 @@ body {
     height: 3em;
     width: 100%;
     top: 0px;
+    left: 0px;
     background-color: #ffffff;
     position: sticky;
     padding-bottom: 10px;
@@ -74,7 +74,6 @@ body {
     padding: 35px;
     border-radius: 50px;
     position: relative;
-    left: 0px;
   }
   #debug {
     position: fixed;
