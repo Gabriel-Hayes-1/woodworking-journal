@@ -49,7 +49,10 @@ body {
   }
 
 
-
+p {
+  margin-left: 2%;
+  width: 60%
+}
 
 
   #test {

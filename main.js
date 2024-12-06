@@ -39,8 +39,10 @@ function scroll() {
     if (startOffset > 600) {
         if (scrollPosition > startOffset-(800)) { //when the image starts coming in (px above image bottom)
             const pos = ((scrollPosition - (startOffset-(img.height/2))) * 1.8); 
-            if (pos < 0) {
+            if (pos < 0) { //prevent images from going too far
                 img.style.left = `${pos}px`; 
+            } else {
+                img.style.left = `0px`; 
             }
             
         }
