@@ -15,10 +15,10 @@ function extractContent(id) {
             alert(`template for ${id} does not exsist`)
         }
         const elements = document.getElementsByClassName("selected-site");
-        for (let i = 0; i < elements.length; i++) {
+        for (let i = 0; i < elements.length; i++) { //remove all selected sites
             elements[i].classList.remove("selected-site");
         }
-        document.getElementById(possibleIds.indexOf(id)).classList.add("selected-site");
+        document.getElementById(possibleIds.indexOf(id)).classList.add("selected-site"); //add selected site currently on
 }
 
 function DistanceFromTop(element) {

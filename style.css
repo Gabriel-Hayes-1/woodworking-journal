@@ -50,7 +50,6 @@ body {
 
 
 p {
-  margin-left: 2%;
   width: 60%
 }
 
@@ -64,7 +63,7 @@ p {
   #calendar-page #day{
     display: flex;
   }
-  #calendar-page #text-container{
+  #calendar-page .text-container{
     display: flex;
     flex-direction: column;
   }
@@ -82,3 +81,8 @@ p {
     position: fixed;
     z-index: 11;
   }
+#container {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-top: 0px;
+}
