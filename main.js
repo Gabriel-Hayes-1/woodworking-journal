@@ -5,7 +5,6 @@ const possibleIds = [
     "calendar"
 ];
 const container = document.getElementById("container")
-const debug = document.getElementById("debug")
 
 function extractContent(id) {
         let template = document.getElementById(id)
@@ -15,6 +14,7 @@ function extractContent(id) {
             alert(`template for ${id} does not exsist`)
         }
         const elements = document.getElementsByClassName("selected-site");
+        
         for (let i = 0; i < elements.length; i++) { //remove all selected sites
             elements[i].classList.remove("selected-site");
         }
